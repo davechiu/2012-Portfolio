@@ -10,6 +10,7 @@ This is a simple one page site that serves up photos one at a time stretched edg
 
 1. Update the info to your own in /index.html
   * contact info and tagline
+  * meta data and opengraph data
   * footer links
   * copyright info
   * google analytics id
