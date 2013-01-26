@@ -45,6 +45,21 @@ var portfolio = {
 		this.slideshow = false;
 		this.step();
 	},
+	'fullscreen' : function() {
+		if (window.fullScreenApi.supportsFullScreen) {
+			window.fullScreenApi.requestFullScreen($('section#main').get(0));
+
+			$('section#main').get(0).addEventListener(fullScreenApi.fullScreenEventName, function() {
+				if (fullScreenApi.isFullScreen()) {
+					// in full screen, sweet!
+					$('section#main').addClass('fullscreen');
+				} else {
+					// exited, cleanup
+					$('section#main').removeClass('fullscreen');
+				}
+			}, true);
+		}
+	},
 	'toggle' : function() {
 		if($('#playpause a').hasClass('pause')){
 			this.pause();
@@ -98,6 +113,10 @@ $(function(){
 				// down
 				portfolio.next();
 				break;
+			case 70:
+				// f
+				portfolio.fullscreen();
+				break;
 			case 74:
 				// j
 				portfolio.prev();
@@ -132,4 +151,9 @@ $(function(){
 			portfolio.prev();
 		}
 	});
+
+	$('a#fullscreen').on('click',function(e){
+		e.preventDefault();
+		portfolio.fullscreen();
+	})
 });
