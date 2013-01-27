@@ -27,7 +27,7 @@ Works best with photos _without_ watermarks, due to the nature of the stretching
 
 ## Todo
 
-* -Fullscreen API Support- done 20130126
+* Fullscreen - done 20130126
 * Virtual watermark
 * Description/Title to go along with photos
 * Better support of Portrait oriented photos
