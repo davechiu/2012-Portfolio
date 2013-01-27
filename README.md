@@ -23,7 +23,18 @@ Only very minor considerations were made for browsers older than IE9.
 
 Photos in Landscape show best due to how the images are stretched to the size of the browser window, I'm using media queries to do some letterboxing for portrait oriented screens... so if you want to show portrait oriented photos, you'll have to manually letter box them. Maybe some day in the future I'll detect the aspect ratio of the image and adjust accordingly.
 
-Works best with photos _without_ watermarks, due to the nature of the stretching and footer placement, they'll most likely end up clipped; but for the purposes of this public repository I'm including watermarked photos. I may take the time in the future to do a virtual watermark in the future as well.
+Works best with photos _without_ watermarks, due to the nature of the stretching and footer placement, they'll most likely end up clipped; but for the purposes of this public repository I'm including watermarked photos. I may take the time in the future to do a virtual watermark as well.
+
+## Todo
+
+* Virtual watermark
+* Description/Title to go along with photos
+* Support of Portrait oriented photos
+
+## License
+
+[![Creative Commons Attribution-ShareAlike 3.0 Unported License](http://i.creativecommons.org/l/by-sa/3.0/88x31.png)](http://creativecommons.org/licenses/by-sa/3.0/)
+This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/).
 
 ## My Implementation
 
